@@ -11,3 +11,7 @@ def test_stable_task_key() -> None:
 def test_invalid_task_key(project: str, index: int) -> None:
     with pytest.raises(ValueError):
         stable_task_key(project, index)
+
+
+def test_enforcement_probe_failure():
+    assert False, "temporary enforcement probe"
